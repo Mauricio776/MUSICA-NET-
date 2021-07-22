@@ -1,0 +1,314 @@
+/* --- ESTILOS GENERALES --- */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+section,
+article {
+    padding: 90px 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 8em;
+    border-left: 8px solid rgb(247, 246, 248);
+    padding: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px rgb(86, 153, 86);
+}
+
+h2 {
+    font-weight: 300;
+}
+
+hr {
+    width: 120px;
+    border-color: black;
+    margin: 20px 0
+}
+
+.title-right h2,
+.title-right p {
+    text-align: right;
+}
+
+.title-right hr {
+    margin-left: calc(100% - 120px);
+}
+
+#space {
+    margin-top: 40px;
+    
+}
+
+video {
+    margin-top: 45px;
+}
+
+
+/* --- NAVEGACIÓN --- */
+
+.navicon {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid rgb(248, 249, 248);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+}
+
+.menu .logo {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.menu ul {
+    margin-bottom: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    background-color: rgb(252, 252, 253);
+}
+
+
+/* --- SECCIÓN HERO --- */
+
+#hero {
+    padding: 178px 0;
+    background: url('../img/401146_331596236879299_1287284701_n.jpg') no-repeat center / cover;
+}
+
+
+
+#hero h1,
+h3,
+p {
+    text-transform: uppercase;
+    color: rgb(1, 61, 117);
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+#hero h3 {
+    color: rgb(245, 242, 248);
+    text-shadow: 0px 1px 1px rgb(16, 26, 16);
+}
+
+#hero p {
+    color: rgb(0, 1, 2);
+}
+
+#hero p,
+h3 {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+
+/* --- SECCIÓN MULTIPLATAFORMA --- */
+
+#multiplatform {
+    padding-bottom: 0;
+}
+
+
+/* --- SECCIÓN TRABAJA CON NOSOTROS --- */
+
+#work {
+    background-color: rgb(192, 200, 248);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    padding: 45px 0;
+    margin-top: 40px;
+}
+
+
+/* --- SECCIÓN FUNCIONALIDADES --- */
+
+#features article:nth-of-type(1) {
+    border-top: 3px solid rgb(220, 220, 220);
+    margin-top: -50px;
+}
+
+/* --- REDES --- */
+
+.redes {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    width: 100vh;
+    justify-content: center;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin: 0 30px;
+    margin-block-start: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redes ul li a {
+    display: block;
+    padding: 0 10px;    
+    color: rgb(9, 76, 134);
+    line-height: 50px;
+    font-size: 40px;
+    text-shadow: 1px 2px 2px #696;
+    transition: .2s;
+}
+
+.redes ul:hover a {
+    float: none;
+}
+
+.redes ul li a:hover {
+    transform: translateY(-3px) scale(1.20);
+}
+
+.redes .WhatsApp {
+    color: rgb(8, 216, 70);
+}
+
+.redes .Hotmail {
+    color: rgb(41, 69, 231);
+}
+
+.redes .YouTube {
+    color: rgb(194, 42, 22);
+}
+
+
+/* --- SECCIÓN TRACK --- */
+
+#track {
+    overflow: hidden;
+}
+
+#track h2 {
+    border-left: 1px solid black;
+    padding: 15px;
+}
+
+#track ul li {
+    display: inline-block;
+    width: 300px;
+    list-style: none;
+    margin: 20px;
+}
+
+.slider-track {
+    width: 2500px;
+    transform: rotateX(60deg) rotateZ(-25deg);
+    margin-top: -100px;
+}
+
+@media (max-width: 850px) {
+    .navicon {
+        width: 40px;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        display: block;
+        position: fixed;
+    }
+    .menu {
+        display: block;
+    }
+    .menu li {
+        display: block;
+    }
+    .menu nav {
+        position: fixed;
+        width: 300px;
+        height: 100vh;
+        background: white;
+        transform: translate(-100%, 0);
+        transition: all .5s;
+    }
+    .menu nav.abierto {
+        transform: translate(0, 0);
+    }
+    #hero h1 {
+    				font-size: 3.3em;
+    				
+    }
+    .menu .logo {
+         width: 60px;
+         margin-left: 40px;
+}
+}
+
+@media (max-width: 850px) {
+    
+    #hero {
+    padding: 178px 0;
+    background: url('../img/401146_331596236879299_1287284701_n.jpg') no-repeat center / cover;
+    height: 60vh;
+   }
+
+    #hero h1 {
+        margin-top: -80px;
+    }
+    
+    #index img {
+        margin-bottom: 50px;
+    }
+    section,
+    article {
+        padding: 50px 0;
+    }
+    video {
+        
+    width:100%;
+    
+    }
+
+    #space {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 850px) {
+    .redes {
+        width: 382px;
+        height: 21vh;
+        box-sizing: border-box;
+        align-items: center;
+        display: flex;
+        }
+    .redes ul li {
+                    margin: 0 7px;
+                    margin-block-start: 5px;
+     }
+}
+
+@media (max-width: 900px) {
+    #hero h1 {
+        font-size: 12vw;
+    }
+}
